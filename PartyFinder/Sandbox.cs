@@ -75,7 +75,7 @@ public class Sandbox
 
     public void FetchData()
     {
-        if (this.IsDataLoading)
+      /*  if (this.IsDataLoading)
         {
             return;
         }
@@ -153,7 +153,7 @@ public class Sandbox
             {
                 PluginLog.Error(e, "Networking error");
             }
-        });
+        });*/
     }
 
     public void ResetData()

@@ -7,12 +7,15 @@ using Dalamud.IoC;
 using Dalamud.Plugin;
 using System.IO;
 using System.Reflection;
+using ImGuiScene;
 
 namespace PartyFinder.GUI.Main;
 
 public class MainWindow : Window
 {
     public static string? DutyType = null;
+    public static TextureWrap? GoatImage;
+
     public MainWindow()
         : base("PartyFinder##PartyFinderMainWindow")
     {
@@ -21,14 +24,9 @@ public class MainWindow : Window
         this.Flags = Service.Configuration.Style.MainWindowFlags;
 
         this.ResetSize();
-        
-        var configuration = Service.Interface.GetPluginConfig() as Configuration ?? new Configuration();
-        configuration.Initialize(Service.Interface);
-        
-        var imagePath = Path.Combine(Service.Interface.AssemblyLocation.Directory?.FullName!, "goat.png");
-        var goatImage = Service.Interface.UiBuilder.LoadImage(imagePath);
-        this.PluginUi = new PluginUI(configuration, goatImage);
 
+        var imagePath = Path.Combine(Service.Interface.AssemblyLocation.Directory?.FullName!, "goat.png");
+        GoatImage = Service.Interface.UiBuilder.LoadImage(imagePath);
     }
 
     public override bool DrawConditions()
@@ -132,7 +130,7 @@ public class MainWindow : Window
 
         ImGui.Text("Work in progress");
         ImGui.Button("Hello");
-        ImGui.Image(goat);
+        ImGui.Image(GoatImage.ImGuiHandle, new Vector2(48f, 48f));
     }
 
     public void SetErrorMessage(string message)
