@@ -1,14 +1,11 @@
 ﻿using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Interface.Windowing;
-using PartyFinder.Manager;
 using ImGuiNET;
 
 namespace PartyFinder.GUI.Main;
 
 public class MainWindow : Window
 {
-    private readonly HeaderBar headerBar = new();
-
     public MainWindow()
         : base("PartyFinder##PartyFinderMainWindow")
     {
@@ -31,25 +28,15 @@ public class MainWindow : Window
 
     public override void OnOpen()
     {
-        Service.CharDataManager.DisplayedChar.Job = GameDataManager.GetDefaultJob();
-        Service.CharDataManager.DisplayedChar.OverriddenMetric = null;
     }
 
     public override void Draw()
     {
-        MenuBar.Draw();
-
-        this.headerBar.Draw();
-
-        if (Service.CharDataManager.DisplayedChar.IsDataReady)
-        {
-            Table.Draw();
-        }
+        ImGui.Text("test smol text");
     }
 
     public void SetErrorMessage(string message)
     {
-        this.headerBar.ErrorMessage = message;
     }
 
     public void ResetSize()
@@ -57,7 +44,6 @@ public class MainWindow : Window
         if (!Service.Configuration.Style.IsSizeFixed &&
             (Service.Configuration.Style.MainWindowFlags & ImGuiWindowFlags.AlwaysAutoResize) != 0)
         {
-            this.headerBar.ResetSizeCount = 5;
         }
     }
 }

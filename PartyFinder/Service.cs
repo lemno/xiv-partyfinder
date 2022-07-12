@@ -1,17 +1,12 @@
-﻿using Dalamud.ContextMenu;
-using Dalamud.Data;
-using Dalamud.Game;
+﻿using Dalamud.Game;
 using Dalamud.Game.ClientState;
 using Dalamud.Game.ClientState.Conditions;
-using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
 using Dalamud.Game.Gui;
 using Dalamud.Game.Gui.FlyText;
 using Dalamud.IoC;
 using Dalamud.Plugin;
-using PartyFinder.GUI.Config;
 using PartyFinder.GUI.Main;
-using PartyFinder.Manager;
 
 namespace PartyFinder;
 
@@ -19,13 +14,7 @@ internal class Service
 {
     internal static Configuration Configuration { get; set; } = null!;
     internal static Commands Commands { get; set; } = null!;
-    internal static ConfigWindow ConfigWindow { get; set; } = null!;
     internal static MainWindow MainWindow { get; set; } = null!;
-    internal static GameDataManager GameDataManager { get; set; } = null!;
-    internal static CharDataManager CharDataManager { get; set; } = null!;
-    internal static PartyListManager PartyListManager { get; set; } = null!;
-    internal static FFLogsClient FfLogsClient { get; set; } = null!;
-    internal static DalamudContextMenuBase ContextMenuBase { get; set; } = null!;
 
     [PluginService]
     internal static DalamudPluginInterface Interface { get; private set; } = null!;
@@ -38,11 +27,7 @@ internal class Service
     [PluginService]
     internal static Condition Condition { get; private set; } = null!;
     [PluginService]
-    internal static DataManager DataManager { get; private set; } = null!;
-    [PluginService]
     internal static FlyTextGui FlyTextGui { get; private set; } = null!;
     [PluginService]
     internal static SigScanner SigScanner { get; private set; } = null!;
-    [PluginService]
-    internal static TargetManager TargetManager { get; private set; } = null!;
 }

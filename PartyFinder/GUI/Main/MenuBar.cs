@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Numerics;
 using Dalamud.Interface;
-using PartyFinder.Manager;
 using ImGuiNET;
+using PartyFinder.Manager;
 
 namespace PartyFinder.GUI.Main;
 

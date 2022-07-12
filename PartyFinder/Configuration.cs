@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Dalamud.Configuration;
-using PartyFinder.Model;
 using ImGuiNET;
 using Newtonsoft.Json;
+using PartyFinder.Model;
 
 namespace PartyFinder;
 
