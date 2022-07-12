@@ -1,0 +1,44 @@
+
+
+>> 
+>> ListingManager = [ XIVPFClient() ] /* also includes timer */
+>> >> Listing = {
+	...
+  }
+>> >> Listing.isOnWatchList
+
+>> SearchFilters = {
+   ...
+}
+
+>> FavouritesManager
+
+>> PartyFinder
+
+>> ConfigUI
+
+>> PartyFinderUI == MainWindow
+
+>> ProgressUI (accessible via context menu)
+
+>> >> Progress = {
+   ...
+}
+
+>> ProgressManager = ProgressClient() (upload when out of duty)
+>> 
+
+
+{
+        this.RespectCloseHotkey = Service.Configuration.Style.IsCloseHotkeyRespected;
+
+        this.Flags = Service.Configuration.Style.MainWindowFlags;
+
+        this.ResetSize();
+
+        var imagePath = Path.Combine(Service.Interface.AssemblyLocation.Directory?.FullName!, "goat.png");
+        var goatImage = Service.Interface.UiBuilder.LoadImage(imagePath);
+
+        ImGui.Image(goatImage);
+
+    }
