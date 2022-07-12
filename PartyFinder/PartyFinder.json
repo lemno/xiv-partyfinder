@@ -1,0 +1,15 @@
+{
+  "Author": "lemno",
+  "Name": "Party Finder",
+  "Description": "smol plugin to fix party finder",
+  "Punchline": "smol plugin to fix party finder",
+  "RepoUrl": "https://github.com/lemno/xiv-partyfinder",
+  "IconUrl": "https://github.com/Aireil/FFLogsViewer/raw/master/res/icon.png",
+   "ImageUrls": [
+    "https://github.com/Aireil/FFLogsViewer/raw/master/res/banner.png"
+  ],
+  "Tags": [
+    "partyfinder"
+  ],
+    "Changelog": "- 0.0.0.1: Initial version."
+}
