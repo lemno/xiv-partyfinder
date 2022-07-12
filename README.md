@@ -1,1 +1,3 @@
 # xiv-partyfinder
+
+smol plugin
