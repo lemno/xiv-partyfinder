@@ -1,16 +1,16 @@
 ﻿using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Interface.Windowing;
-using FFLogsViewer.Manager;
+using PartyFinder.Manager;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Main;
+namespace PartyFinder.GUI.Main;
 
 public class MainWindow : Window
 {
     private readonly HeaderBar headerBar = new();
 
     public MainWindow()
-        : base("FFLogsViewer##FFLogsViewerMainWindow")
+        : base("PartyFinder##PartyFinderMainWindow")
     {
         this.RespectCloseHotkey = Service.Configuration.Style.IsCloseHotkeyRespected;
 

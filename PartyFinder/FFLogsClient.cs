@@ -5,10 +5,10 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Dalamud.Logging;
-using FFLogsViewer.Model;
+using PartyFinder.Model;
 using Newtonsoft.Json;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 public class FFLogsClient
 {

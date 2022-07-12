@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Numerics;
 using Dalamud.Interface.Colors;
-using FFLogsViewer.Model;
+using PartyFinder.Model;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Main;
+namespace PartyFinder.GUI.Main;
 
 public class Table
 {

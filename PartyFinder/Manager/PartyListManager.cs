@@ -3,9 +3,9 @@ using System.Linq;
 using FFXIVClientStructs.FFXIV.Client.Game.Group;
 using FFXIVClientStructs.FFXIV.Client.UI.Info;
 using Lumina.Excel.GeneratedSheets;
-using PartyMember = FFLogsViewer.Model.PartyMember;
+using PartyMember = PartyFinder.Model.PartyMember;
 
-namespace FFLogsViewer.Manager;
+namespace PartyFinder.Manager;
 
 public class PartyListManager
 {

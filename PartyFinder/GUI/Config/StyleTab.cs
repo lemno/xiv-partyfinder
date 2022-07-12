@@ -1,6 +1,6 @@
 ﻿using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Config;
+namespace PartyFinder.GUI.Config;
 
 public class StyleTab
 {

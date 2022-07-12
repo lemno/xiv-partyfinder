@@ -2,21 +2,21 @@
 using Dalamud.Interface.Windowing;
 using Dalamud.IoC;
 using Dalamud.Plugin;
-using FFLogsViewer.GUI.Config;
-using FFLogsViewer.GUI.Main;
-using FFLogsViewer.Manager;
+using PartyFinder.GUI.Config;
+using PartyFinder.GUI.Main;
+using PartyFinder.Manager;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 // ReSharper disable once UnusedType.Global
-public sealed class FFLogsViewer : IDalamudPlugin
+public sealed class PartyFinder : IDalamudPlugin
 {
-    public string Name => "FFLogsViewer";
+    public string Name => "PartyFinder";
 
     private readonly WindowSystem windowSystem;
     private readonly ContextMenu contextMenu;
 
-    public FFLogsViewer(
+    public PartyFinder(
         [RequiredVersion("1.0")] DalamudPluginInterface pluginInterface)
     {
         pluginInterface.Create<Service>();
@@ -34,7 +34,7 @@ public sealed class FFLogsViewer : IDalamudPlugin
 
         Service.MainWindow = new MainWindow();
         Service.ConfigWindow = new ConfigWindow();
-        this.windowSystem = new WindowSystem("FFLogsViewer");
+        this.windowSystem = new WindowSystem("PartyFinder");
         this.windowSystem.AddWindow(Service.ConfigWindow);
         this.windowSystem.AddWindow(Service.MainWindow);
 

@@ -2,10 +2,10 @@
 using System.Numerics;
 using Dalamud.Interface;
 using Dalamud.Interface.Colors;
-using FFLogsViewer.Model;
+using PartyFinder.Model;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Config;
+namespace PartyFinder.GUI.Config;
 
 public class PopupEntry
 {

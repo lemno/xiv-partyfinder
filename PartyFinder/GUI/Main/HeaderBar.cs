@@ -6,7 +6,7 @@ using Dalamud.Interface;
 using Dalamud.Interface.Colors;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Main;
+namespace PartyFinder.GUI.Main;
 
 public class HeaderBar
 {

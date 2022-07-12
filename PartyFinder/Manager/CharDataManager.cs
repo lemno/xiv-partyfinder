@@ -5,7 +5,7 @@ using FFXIVClientStructs.FFXIV.Client.Game.Character;
 using FFXIVClientStructs.FFXIV.Client.System.Framework;
 using Lumina.Excel.GeneratedSheets;
 
-namespace FFLogsViewer.Manager;
+namespace PartyFinder.Manager;
 
 public class CharDataManager
 {

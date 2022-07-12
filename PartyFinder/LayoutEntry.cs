@@ -1,7 +1,7 @@
 ﻿using System;
-using FFLogsViewer.Model;
+using PartyFinder.Model;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 public class LayoutEntry : ICloneable
 {

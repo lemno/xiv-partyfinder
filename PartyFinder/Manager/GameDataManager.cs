@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Threading.Tasks;
 using Dalamud.Logging;
-using FFLogsViewer.Model;
-using FFLogsViewer.Model.GameData;
+using PartyFinder.Model;
+using PartyFinder.Model.GameData;
 
-namespace FFLogsViewer.Manager;
+namespace PartyFinder.Manager;
 
 public class GameDataManager : IDisposable
 {

@@ -1,7 +1,7 @@
 ﻿using Dalamud.Interface.Colors;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Config;
+namespace PartyFinder.GUI.Config;
 
 public class MiscTab
 {
@@ -9,7 +9,7 @@ public class MiscTab
     {
         if (ImGui.Button("Open the GitHub repo"))
         {
-            Util.OpenLink("https://github.com/Aireil/FFLogsViewer");
+            Util.OpenLink("https://github.com/Aireil/PartyFinder");
         }
 
         var hasChanged = false;

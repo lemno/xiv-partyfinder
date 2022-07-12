@@ -9,11 +9,11 @@ using Dalamud.Game.Gui;
 using Dalamud.Game.Gui.FlyText;
 using Dalamud.IoC;
 using Dalamud.Plugin;
-using FFLogsViewer.GUI.Config;
-using FFLogsViewer.GUI.Main;
-using FFLogsViewer.Manager;
+using PartyFinder.GUI.Config;
+using PartyFinder.GUI.Main;
+using PartyFinder.Manager;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 internal class Service
 {

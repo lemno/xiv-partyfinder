@@ -1,6 +1,6 @@
 ﻿using Dalamud.Plugin.Ipc;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 public class IPC
 {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Numerics;
 using Dalamud.Interface;
-using FFLogsViewer.Manager;
+using PartyFinder.Manager;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Main;
+namespace PartyFinder.GUI.Main;
 
 public class MenuBar
 {
@@ -118,7 +118,7 @@ public class MenuBar
                     ImGui.SameLine();
                     if (ImGui.Button("Open the GitHub repo"))
                     {
-                        Util.OpenLink("https://github.com/Aireil/FFLogsViewer");
+                        Util.OpenLink("https://github.com/Aireil/PartyFinder");
                     }
 
                     ImGui.EndPopup();

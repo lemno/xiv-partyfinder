@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace FFLogsViewer.Model;
+namespace PartyFinder.Model;
 
 public class Job
 {

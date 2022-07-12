@@ -1,4 +1,4 @@
-﻿namespace FFLogsViewer.Model;
+﻿namespace PartyFinder.Model;
 
 public class Metric
 {

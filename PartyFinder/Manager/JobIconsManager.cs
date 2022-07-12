@@ -6,7 +6,7 @@ using Dalamud.Utility;
 using ImGuiScene;
 using Lumina.Data.Files;
 
-namespace FFLogsViewer.Manager;
+namespace PartyFinder.Manager;
 
 public class JobIconsManager : IDisposable
 {

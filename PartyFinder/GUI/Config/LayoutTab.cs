@@ -4,7 +4,7 @@ using Dalamud.Interface;
 using Dalamud.Interface.Colors;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Config;
+namespace PartyFinder.GUI.Config;
 
 public class LayoutTab
 {

@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using System.Numerics;
 using Dalamud.Interface;
-using FFLogsViewer.Manager;
-using FFLogsViewer.Model;
+using PartyFinder.Manager;
+using PartyFinder.Model;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Config;
+namespace PartyFinder.GUI.Config;
 
 public class StatsTab
 {

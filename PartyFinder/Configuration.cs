@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Dalamud.Configuration;
-using FFLogsViewer.Model;
+using PartyFinder.Model;
 using ImGuiNET;
 using Newtonsoft.Json;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 [Serializable]
 public class Configuration : IPluginConfiguration

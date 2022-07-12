@@ -1,7 +1,7 @@
 ﻿using System;
 using Dalamud.Game.Command;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 public class Commands
 {

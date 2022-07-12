@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using Dalamud.ContextMenu;
-using FFLogsViewer.Manager;
+using PartyFinder.Manager;
 using Lumina.Excel.GeneratedSheets;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 public class ContextMenu : IDisposable
 {

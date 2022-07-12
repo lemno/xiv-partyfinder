@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 using Dalamud.Game.Text.SeStringHandling;
 using Dalamud.Interface;
 using Dalamud.Interface.Colors;
-using FFLogsViewer.Manager;
+using PartyFinder.Manager;
 using ImGuiNET;
 
-namespace FFLogsViewer;
+namespace PartyFinder;
 
 public class Util
 {

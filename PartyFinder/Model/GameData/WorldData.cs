@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace FFLogsViewer.Model.GameData;
+namespace PartyFinder.Model.GameData;
 
 public class WorldData
 {

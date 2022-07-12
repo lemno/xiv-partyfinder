@@ -1,14 +1,14 @@
 ﻿using Dalamud.Interface.Windowing;
 using ImGuiNET;
 
-namespace FFLogsViewer.GUI.Config;
+namespace PartyFinder.GUI.Config;
 
 public class ConfigWindow : Window
 {
     public LayoutTab LayoutTab = new();
 
     public ConfigWindow()
-        : base("Configuration##FFLogsViewerConfigWindow")
+        : base("Configuration##PartyFinderConfigWindow")
     {
         this.RespectCloseHotkey = true;
 
